@@ -1,0 +1,93 @@
+/* Define estilos para todos os elementos */
+* {
+    /* Define a margem de todos os elementos como zero */
+    margin: 0;
+
+    /* Define o preenchimento de todos os elementos como zero */
+    padding: 0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../img/fundo.png) repeat-x;
+}
+
+#cabecalho{
+    width: 900px;
+    margin: 0 auto;
+    
+}
+
+/* Define estilos para a ID 'topo' */
+#topo {
+    /* Define a altura do elemento como 150 pixels */
+    height: 150px;
+    padding-top: 25px;
+
+    /* Define uma imagem de fundo e sua posição */
+    background: url(../img/detalhe-topo.png) no-repeat right top;
+
+    /* Define uma borda vermelha com 1 pixel de largura */
+   
+}
+
+.logo{
+    width: 150px;
+    height: 66px;
+    background: url(../img/logo.png);
+    text-indent: -3000px;
+}
+
+.navegador{
+
+    padding-top: 10px;
+    padding-left: 40px;
+    
+
+    width: 700px;
+    height: 40px;
+    background: #A9B7C6;
+   
+   float: left;
+
+}
+
+.navegador .link-navegador:not(:last-child) {
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+   
+    background: url(../img/divisor.png) no-repeat right center;
+}
+.navegador .link-navegador-u{
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: right;
+}
+
+
+.navegador .link-navegador:hover ,.navegador .link-navegador-u:hover{
+    color: #294C71;
+   
+    padding: 10px;
+    
+
+
+}
+
+body.home .navegador a#home,
+body.brasil .navegador a#brasil,
+body.internacional .navegador a#internacional,
+body.economia .navegador a#economia,
+body.saude .navegador a#saude,
+body.ciencias .navegador a#ciencias,
+body.fotos .navegador a#fotos
+{
+    color:  #294C71;
+   
+    cursor: text;
+
+}
+
